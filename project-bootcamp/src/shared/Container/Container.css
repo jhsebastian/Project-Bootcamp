@@ -1,0 +1,15 @@
+.container {
+    margin: 0;
+    padding: 0;
+    background-color: blanchedalmond;
+  }
+
+.logo {
+  position: center;
+  background-size: cover;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
