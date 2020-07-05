@@ -1,11 +1,12 @@
 import React from 'react';
 import './Logo.css';
+import logo from '../../assets/LOGO SOLO EN JPG.jpg'
 
 class Logo extends React.Component {
     render() {
         return (
             <div className="logo">
-                <img src= "https://github.com/jhsebastian/Project-Bootcamp/blob/master/LOGO%20SOLO%20EN%20JPG.jpg?raw=true" alt="logo" />
+                <img src={logo} alt="logo" />
             </div>
         );
     }
