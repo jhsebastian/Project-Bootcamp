@@ -1,6 +1,6 @@
 import React from 'react';
 import './Logo.css';
-import logo from '../../assets/LOGO SOLO EN JPG.jpg'
+import logo from '../../assets/Logo.jpg';
 
 class Logo extends React.Component {
     render() {
