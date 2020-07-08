@@ -1,0 +1,14 @@
+.contactanos-image-container {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(253, 253, 253);
+}
+
+.contactanos-image {  
+  height: 95%;
+  width: 70%;
+  box-shadow: 2px 2px 20px 2px rgb(163, 180, 238);
+}

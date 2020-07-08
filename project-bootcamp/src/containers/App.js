@@ -1,18 +1,15 @@
 import React from 'react';
 import './App.css';
-import Logo from '../shared/Logo';
-import Container from '../shared/Container';
-import Banner from '../shared/Banner/Banner';
-import Navbar from '../shared/Navbar';
+import Home from '../pages/Home/Home';
+// import Contactenos from '../pages/Contactenos/Contactenos';
+// import QuienesSomos from '../pages/QuienesSomos/QuienesSomos';
+
 
 function App() {
   return (
     <div>
-      <Navbar />
-      <Logo />
-      <Banner />
-      <Container />
-      </div>
+      <Home />
+    </div>
   );
 }
 
