@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { client } from '../../client';
 import ProductCard from './components/ProductCard/ProductCard';
 import Navbar from '../../shared/Navbar/index';
+import Footer from '../../shared/Footer/Footer';
 
 class Products extends Component {
 
@@ -25,6 +26,7 @@ class Products extends Component {
       <div>
         <Navbar/>
         <ProductCard item={this.state.products}/>
+        <Footer />
       </div>
     )
   };
