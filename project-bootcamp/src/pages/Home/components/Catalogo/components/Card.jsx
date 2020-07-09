@@ -3,7 +3,7 @@ import './Card.css';
 
 const Card = ({ title, urlImage, urlPdf, namePdf }) => {
   return(
-    <div className="card-container">
+    <div className="card-container-catalogo">
       <div className="card-container-title">
         <h3>{title}</h3>
       </div>
