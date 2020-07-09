@@ -23,10 +23,6 @@
   color: white;
 }
 
-.card-container-image {
-  width: 300px;
-  height: 300px;
-}
 
 .card-container-image img {
   width: 300px;
@@ -44,4 +40,17 @@
 
 .card-container-catalogo a:hover {
   color: rgb(123, 122, 124);
+}
+
+@media only screen and (max-width: 600px) {
+  .card-container-catalogo {
+    width: 80%;
+  }
+  .card-container-image img {
+    margin: 20px;
+    width: 85%;
+    height: 100%;
+    border-radius: 50%;
+  }
+
 }

@@ -1,17 +1,1 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-.button-navbar {
-  border: none;
-  color: white;
-  background: none;
-  font-size: 25px;
-  font-family: 'Roboto', sans-serif;
-  cursor: pointer;
-  margin-right: 10px;
-}
-
-.button-navbar:focus {
-  border: none;
-  color: bisque;
-}
 

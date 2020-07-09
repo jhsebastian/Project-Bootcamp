@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { client } from '../../../../client';
+import { client } from '../../client';
 import ProductCard from './components/ProductCard/ProductCard';
+import Navbar from '../../shared/Navbar/index';
 
 class Products extends Component {
 
@@ -22,6 +23,7 @@ class Products extends Component {
   render() {
     return(
       <div>
+        <Navbar/>
         <ProductCard item={this.state.products}/>
       </div>
     )

@@ -16,7 +16,7 @@ const ProductCard = ({ item }) => {
               <li className="list-group-item">{product.fields.size}</li>
             </ul>
           </div>
-      )};
+      )}
     </div>
   )
 };
