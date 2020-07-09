@@ -1,8 +1,0 @@
-Imagen-Banner img { 
-    background: white;
-    object-fit: contain ;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-    position: relative; 
-}
