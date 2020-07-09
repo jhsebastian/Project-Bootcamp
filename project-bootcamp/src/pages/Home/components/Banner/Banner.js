@@ -12,7 +12,7 @@ const Banner = ( ) =>
       <img src={'/imagenes/banner2.jpg'} className="d-block w-100" alt="..."/>
     </div>
     <div className="carousel-item">
-      <img src={'/imagenes/banner3.jpeg'} className="d-block w-100" alt="..."/>
+      <img src={'/imagenes/banner3.jpg'} className="d-block w-100" alt="..."/>
     </div>
   </div>
   <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
