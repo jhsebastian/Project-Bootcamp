@@ -5,7 +5,7 @@ import '../ImageQuienesSomos/ImageQuienesSomos.css';
 const ImageQuienesSomos = () => {
   return(
     <div className="quienes-somos-container">
-      <img  className="quienes-somos-image" src={quienesSomosImage} alt=""/>
+      <img  src={quienesSomosImage} className="img-fluid" alt="Responsive quienesSomos"/>
     </div>
   )
 };
