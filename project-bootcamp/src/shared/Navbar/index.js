@@ -4,7 +4,7 @@ import Button from './components/Button';
 
 const Navbar = () => {
   return (
-    <div className="navbar">
+    <div className="navbar-container">
       <div className="buttons">
         <Button 
           name="CCM CREACTIVOS"
