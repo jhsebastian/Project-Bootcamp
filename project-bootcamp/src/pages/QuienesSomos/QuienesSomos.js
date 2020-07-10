@@ -1,14 +1,17 @@
 import React from 'react';
 import Navbar from '../../shared/Navbar/index';
-import '../QuienesSomos/components/ImageQuienesSomos/ImageQuienesSomos';
-import ImageQuienesSomos from '../QuienesSomos/components/ImageQuienesSomos/ImageQuienesSomos';
+import './components/QuienesSomosCard/QuienesSomosCard';
+import QuienesSomosCard from './components/QuienesSomosCard/QuienesSomosCard';
 import Footer from '../../shared/Footer/Footer';
+import './QuienesSomos.css'
 
 const QuienesSomos = () => {
   return(
     <div>
       <Navbar />
-      <ImageQuienesSomos />
+      <div className="quienes-somos-container">
+        <QuienesSomosCard />
+      </div>
       <Footer />
     </div>
   )

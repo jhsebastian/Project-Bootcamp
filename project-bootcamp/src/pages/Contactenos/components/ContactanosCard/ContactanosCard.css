@@ -1,0 +1,51 @@
+.contactanos-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  border: none;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.16);
+  background-color: white;
+}
+
+.contactanos-card-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color:#167BFF;
+  width: 100%;
+  padding: 0px;
+  color: white;
+  height: 5rem;
+}
+
+.contactanos-card-title h1 {
+  font-size: 35px;
+}
+
+.contactanos-card p {
+  padding: 10px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.contactanos-card-p {
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .contactanos-card p {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .contactanos-card p {
+    font-size: 14px;
+    text-align: center;
+  }
+}

@@ -6,9 +6,9 @@ const Footer = () => {
     <div className="container">
       <footer class="">
           <div class="">
-            <h1 class="text-center text-uppercase font-weight-bolder">Oficinas</h1>
+            <h1 class="text-left text-uppercase font-weight-bolder">Oficinas</h1>
             <article class="">
-              <h4 class="text-uppercase text-center font-weight-bold">Cali - Colombia</h4>
+              <h4 class="text-uppercase text-left font-weight-bold">Cali - Colombia</h4>
               <span class="f">Carrera 18A 13- 37 </span>
               <p class="" title="Call Tokyo Office">
                 312 232 8565 - 312 223 7998

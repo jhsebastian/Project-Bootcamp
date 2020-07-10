@@ -1,13 +1,16 @@
 import React from 'react';
 import Navbar from '../../shared/Navbar/index';
-import ContactenosImage from './components/ContactenosImage/ContactenosImage';
+import ContactanosCard from './components/ContactanosCard/ContactanosCard';
 import Footer from '../../shared/Footer/Footer';
+import './Contactenos.css';
 
 const Contactenos = () => {
   return(
     <div>
       <Navbar />
-      <ContactenosImage />
+      <div className="contactanos-container">
+        <ContactanosCard />
+      </div>
       <Footer />
     </div>
   )
