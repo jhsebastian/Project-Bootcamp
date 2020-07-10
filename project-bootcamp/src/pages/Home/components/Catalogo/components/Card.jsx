@@ -10,7 +10,7 @@ const Card = ({ title, urlImage, urlPdf, namePdf }) => {
       <div className="card-container-image">
         <img className="img-fluid" alt="Responsive img" src={urlImage}/>
       </div>
-      <a href={urlPdf} download={namePdf}>Click aquí para descargar</a>
+      <a class="btn btn-light" href={urlPdf} download={namePdf}>Click aquí para descargar</a>
     </div>
   )
 };
