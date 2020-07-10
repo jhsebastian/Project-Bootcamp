@@ -6,10 +6,10 @@ const Banner = ( ) =>
   <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
     <div className="carousel-inner">
       <div className="carousel-item active">
-        <img src={'/imagenes/banner1.jpg'} className="d-block w-100" alt="..."/>
+        <img src={'/imagenes/Banner1.jpg'} className="d-block w-100" alt="..."/>
       </div>
       <div className="carousel-item">
-        <img src={'/imagenes/banner2.jpg'} className="d-block w-100" alt="..."/>
+        <img src={'/imagenes/Banner2.jpg'} className="d-block w-100" alt="..."/>
       </div>
       <div className="carousel-item">
         <img src={'/imagenes/banner3.jpg'} className="d-block w-100" alt="..."/>
