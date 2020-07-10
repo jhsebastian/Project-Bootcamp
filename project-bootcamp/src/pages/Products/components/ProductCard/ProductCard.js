@@ -3,6 +3,8 @@ import './ProductCard.css';
 
 const ProductCard = ({ item }) => {
   return(
+    <div className="title">
+      <h1>Productos</h1>
     <div className="card-container">
       {item.map((product, index1) => 
         <div className="card">
@@ -18,6 +20,7 @@ const ProductCard = ({ item }) => {
         </div>
       )}
     </div>
+  </div>
   )
 };
 

@@ -14,17 +14,17 @@ const Button = ({ name, home, quienesSomos, contactanos, productos }) => {
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
               <Link to="/quienessomos">
-                <a class="nav-link" href="#">{quienesSomos}</a>
+                <a class="nav-link font-weight-bold" href="#">{quienesSomos}</a>
               </Link>
             </li>
             <li class="nav-item">
               <Link to="/contactanos">
-                <a class="nav-link" href="#">{contactanos}</a>
+                <a class="nav-link font-weight-bold" href="#">{contactanos}</a>
               </Link>
             </li>
             <li class="nav-item">
               <Link to="/productos">
-                <a class="nav-link" href="#">{productos}</a>
+                <a class="nav-link font-weight-bold" href="#">{productos}</a>
               </Link>
             </li>
           </ul>

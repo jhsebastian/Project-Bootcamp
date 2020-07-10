@@ -1,3 +1,10 @@
 .navbar {
   padding: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 400;
+  opacity: unset;
+  
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
 }
