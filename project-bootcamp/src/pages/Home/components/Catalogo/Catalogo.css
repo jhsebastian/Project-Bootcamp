@@ -3,7 +3,10 @@
   justify-content: space-around;
   margin-bottom: 30px;
 }
-
+.card-container-title h3{
+  margin: 30px;
+  font-size: 100%;
+}
 @media only screen and (max-width: 600px) {
   .catalogo-container {
     display: flex;
