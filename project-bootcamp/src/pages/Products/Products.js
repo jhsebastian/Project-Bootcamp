@@ -3,6 +3,7 @@ import { client } from '../../API/client';
 import ProductCard from './components/ProductCard/ProductCard';
 import Navbar from '../../shared/Navbar/index';
 import Footer from '../../shared/Footer/Footer';
+import InputProduct from './components/InputProduct/InputProduct';
 
 class Products extends Component {
 
@@ -13,7 +14,6 @@ class Products extends Component {
   componentDidMount() {
     client.getEntries()
       .then((response) => {
-        console.log(response)
         this.setState({
           products: response.items
         })
@@ -24,7 +24,9 @@ class Products extends Component {
   render() {
     return(
       <div>
-        <Navbar/>
+        <Navbar>
+          <InputProduct />
+        </Navbar> 
         <ProductCard item={this.state.products}/>
         <Footer />
       </div>
