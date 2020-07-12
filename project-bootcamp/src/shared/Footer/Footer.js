@@ -12,7 +12,7 @@ const Footer = () => {
           
           <form class="form-inline form-container">
             <div class="form-group mb-2">
-              <input class="input-email" type="text" readonly class="form-control" id="staticEmail2" value="email@example.com"/>
+              <input class="input-email" type="text" readonly class="form-control" id="staticEmail2" placeholder="email@example.com"/>
             </div>
             <button type="submit" class="btn btn-primary mb-2">Enviar</button>
           </form>

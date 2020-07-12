@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../../../../assets/Logo.jpg';
+import image from '../../../../assets/logo cuadrado.jpg';
 import './ContactanosCard.css';
 
 const ContactenosImage = () => {
@@ -21,7 +21,7 @@ const ContactenosImage = () => {
         <br/>
         cotizaciones@ccmcreactivos.com
       </p>
-      <img className="img-fluid"src={image} alt="logo"/>
+      <img className="img-fluid img-card"src={image} alt="logo"/>
     </div>
   )
 };
