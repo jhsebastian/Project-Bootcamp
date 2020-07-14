@@ -4,6 +4,7 @@ import Logo from './components/Logo/Logo';
 import Banner from './components/Banner/Banner';
 import Catalogo from './components/Catalogo/Catalogo';
 import Footer from '../../shared/Footer/Footer';
+import Login from '../Login/Login';
 
 const Home = () => {
   return(
@@ -13,6 +14,7 @@ const Home = () => {
       <Banner/>
       <Catalogo />
       <Footer />
+      <Login />
     </div>
   )
 };
