@@ -1,0 +1,13 @@
+.login-container {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    width: 60%;
+    justify-content: center;
+    margin:  100px auto;
+    text-align: center;
+}
+
+.submit-button-container {
+    margin-top: 30px;
+}

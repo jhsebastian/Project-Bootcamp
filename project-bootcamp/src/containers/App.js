@@ -4,6 +4,7 @@ import Home from '../pages/Home/Home';
 import QuienesSomos from '../pages/QuienesSomos/QuienesSomos';
 import Productos from '../pages/Products/Products';
 import Contactanos from '../pages/Contactenos/Contactenos';
+import Login from '../pages/Login/Login';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
@@ -24,7 +25,7 @@ function App() {
           <Productos/>
         </Route>
         <Route exact path="/login">
-          <Productos/>
+          <Login/>
         </Route>
       </Switch>
     </Router>

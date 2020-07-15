@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Button.css';
-const Button = ({ name, home, quienesSomos, contactanos, productos }) => {
+
+const Button = ({ name, home, quienesSomos, contactanos, productos, }) => {
   return(
     <nav class="navbar navbar-expand-xl navbar-dark bg-primary justify-content-between col-xs-12">
         <Link to="/">
@@ -28,7 +29,7 @@ const Button = ({ name, home, quienesSomos, contactanos, productos }) => {
               </Link>
             </li>
           </ul>
-          <Link to="/productos">
+          <Link to="/login">
             <button className="btn btn-light">Inicar Sesión</button>
           </Link>
           
