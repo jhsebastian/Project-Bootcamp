@@ -3,10 +3,8 @@ import './ProductCard.css';
 
 const ProductCard = ({ item }) => {
   return(
-    <div className="title">
-      <h1>Productos</h1>
     <div className="card-container">
-      {item.map((product, index1) => 
+      {item.map((product, index) => 
         <div className="card">
           <img className="card-img-top card-image" src={product.fields.image.fields.file.url} alt="Card img cap"/>
           <div className="card-body">
@@ -17,10 +15,10 @@ const ProductCard = ({ item }) => {
             <li className="list-group-item">{product.fields.brand}</li>
             <li className="list-group-item">{product.fields.size}</li>
           </ul>
+          <button className="btn-card btn btn-secondary btn-lg">Lo quiero</button>
         </div>
       )}
     </div>
-  </div>
   )
 };
 

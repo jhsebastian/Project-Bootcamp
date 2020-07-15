@@ -1,0 +1,14 @@
+.title{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  font-weight: 800;
+}
+
+.container-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

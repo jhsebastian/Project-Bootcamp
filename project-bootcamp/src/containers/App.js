@@ -23,6 +23,9 @@ function App() {
         <Route exact path="/productos">
           <Productos/>
         </Route>
+        <Route exact path="/login">
+          <Productos/>
+        </Route>
       </Switch>
     </Router>
   );

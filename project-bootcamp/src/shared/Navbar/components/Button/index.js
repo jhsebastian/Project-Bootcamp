@@ -28,6 +28,10 @@ const Button = ({ name, home, quienesSomos, contactanos, productos }) => {
               </Link>
             </li>
           </ul>
+          <Link to="/productos">
+            <button className="btn btn-light">Inicar Sesión</button>
+          </Link>
+          
         </div>
     </nav>
   )
