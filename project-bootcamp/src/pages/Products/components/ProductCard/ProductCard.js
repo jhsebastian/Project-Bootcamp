@@ -22,7 +22,13 @@ const ProductCard = ({ item }) => {
             <li className="list-group-item">{product.fields.brand}</li>
             <li className="list-group-item">{product.fields.size}</li>
           </ul>
-          <button  type="button" className="btn-card btn btn-secondary btn-lg" onClick={() => addToCart(product)}>Lo quiero</button>
+          <button 
+            type="button" 
+            className="btn-card btn btn-secondary btn-lg" 
+            onClick={() => addToCart(product)}
+          >
+            Lo quiero
+          </button>
         </div>
       )}
     </div>
