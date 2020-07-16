@@ -4,7 +4,11 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
-  
+}
+
+.card:hover {
+  box-shadow:  20px 20px 60px #b9bbbb, 
+  -20px -20px 60px #fbfdfd;
 }
 
 .card {

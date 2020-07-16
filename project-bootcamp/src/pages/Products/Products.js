@@ -9,7 +9,8 @@ import './Products.css'
 class Products extends Component {
 
   state = {
-    products: []
+    products: [],
+    item: []
   }
 
   componentDidMount() {
@@ -18,12 +19,21 @@ class Products extends Component {
         this.setState({
           products: response.items
         })
+        console.log(response)
       })
       .catch(console.error)
   }
 
   handleSearch = (search) => {
     console.log(search)
+    client.getEntries("PD2H5xht7Df6Nq2LfhVnT")
+      .then((response) => {
+        this.setState({
+          item: response.items
+        })
+          this.state.item.map(item => console.log(item.fields.name))
+      })
+      .catch(console.error)
   }
 
   render() {
@@ -34,7 +44,6 @@ class Products extends Component {
         <div className="container-input">
           <InputProduct handleSearch={this.handleSearch}/>
         </div>
-        
         <ProductCard item={this.state.products}/>
         <Footer />
       </div>
