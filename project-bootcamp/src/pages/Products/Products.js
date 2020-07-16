@@ -7,43 +7,58 @@ import InputProduct from './components/InputProduct/InputProduct';
 import './Products.css'
 
 class Products extends Component {
-
   state = {
     products: [],
     item: []
   }
 
   componentDidMount() {
-    client.getEntries()
+    const { isCart } = this.props;
+
+    if (isCart) {
+      const cart = JSON.parse(localStorage.getItem('cart') || "[]");
+
+      if (cart.length > 0) {
+        client.getEntries({"sys.id[in]": cart.join(",")})
+          .then((response) => {
+            this.setState({
+              products: response.items
+            })
+          })
+          .catch(console.error)
+      }
+    } else {
+      client.getEntries()
+        .then((response) => {
+          this.setState({
+            products: response.items
+          })
+        })
+        .catch(console.error)
+    }
+  }
+
+  handleSearch = (search) => {
+    client.getEntries({ "query": search})
       .then((response) => {
         this.setState({
           products: response.items
         })
-        console.log(response)
-      })
-      .catch(console.error)
-  }
-
-  handleSearch = (search) => {
-    console.log(search)
-    client.getEntries("PD2H5xht7Df6Nq2LfhVnT")
-      .then((response) => {
-        this.setState({
-          item: response.items
-        })
-          this.state.item.map(item => console.log(item.fields.name))
       })
       .catch(console.error)
   }
 
   render() {
+    const { isCart } = this.props;
     return(
       <div>
         <Navbar/>
         <h1 className="title">Productos</h1>
-        <div className="container-input">
-          <InputProduct handleSearch={this.handleSearch}/>
-        </div>
+        { !isCart && (
+            <div className="container-input">
+              <InputProduct handleSearch={this.handleSearch}/>
+            </div>
+        )}
         <ProductCard item={this.state.products}/>
         <Footer />
       </div>

@@ -67,4 +67,20 @@
   .contactanos-card {
     width: 70%;
   }
+
+  .map {
+   width: 80%;
+   height: 10%;
+  display: flex;
+  justify-content: center;
+    }
+
+  .datos {
+  font-size: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin: 0;
+  }
 }
