@@ -30,7 +30,7 @@ const Button = ({ name, home, quienesSomos, contactanos, productos, }) => {
             </li>
           </ul>
           <Link to="/login">
-            <button className="btn btn-light">Inicar Sesión</button>
+            <button className="btn btn-light">Iniciar Sesión</button>
           </Link>
           
         </div>
