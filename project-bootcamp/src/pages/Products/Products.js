@@ -4,7 +4,9 @@ import ProductCard from './components/ProductCard/ProductCard';
 import Navbar from '../../shared/Navbar/index';
 import Footer from '../../shared/Footer/Footer';
 import InputProduct from './components/InputProduct/InputProduct';
-import './Products.css'
+import './Products.css';
+import { Link } from 'react-router-dom';
+import imgCart from '../../assets/shopping-cart.svg';
 
 class Products extends Component {
   state = {
@@ -60,6 +62,11 @@ class Products extends Component {
             </div>
         )}
         <ProductCard item={this.state.products}/>
+        <Link to="/carrito">
+          <span>
+            <img src={imgCart} alt=""/>
+          </span>
+        </Link>
         <Footer />
       </div>
     )

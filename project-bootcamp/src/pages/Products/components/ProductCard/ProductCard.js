@@ -2,7 +2,6 @@ import React from 'react';
 import './ProductCard.css';
 
 const ProductCard = ({ item }) => {
-
   const addToCart = (product) => {
     const cart = JSON.parse(localStorage.getItem('cart') || "[]");
     cart.push(product.sys.id);
@@ -23,7 +22,7 @@ const ProductCard = ({ item }) => {
             <li className="list-group-item">{product.fields.brand}</li>
             <li className="list-group-item">{product.fields.size}</li>
           </ul>
-          <button className="btn-card btn btn-secondary btn-lg" onClick={() => addToCart(product)}>Lo quiero</button>
+          <button  type="button" className="btn-card btn btn-secondary btn-lg" onClick={() => addToCart(product)}>Lo quiero</button>
         </div>
       )}
     </div>
