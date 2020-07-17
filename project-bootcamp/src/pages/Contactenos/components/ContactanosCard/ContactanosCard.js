@@ -41,7 +41,7 @@ const ContactenosImage = () => {
         target="_blank">mediosdigitales@ccmcreactivos.com </a>
         <br/>
         <a className="datos"
-        href="mail.google.com/mail/u/0/#inbox?compose=CllgCJlHnRmVbqsxLCKhlDthmpQzpSqFdHzVwJQCVtlgkRHnltztSDzSMvmFTKXhlrKJQsMTMnV" 
+        href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNxNzXpzmqZNZbRxTZmFDTqNFzQlMqSJXKZkDLfqNvQXqWClqTsHLVljvmbzBjkWdqzQQq" 
         target="_blank">cotizaciones@ccmcreactivos.com</a>
       </p>
       <img className="img-fluid img-card"src={image} alt="logo"/>
