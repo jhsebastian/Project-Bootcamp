@@ -61,12 +61,14 @@ class Products extends Component {
               <InputProduct handleSearch={this.handleSearch}/>
             </div>
         )}
-        <ProductCard item={this.state.products}/>
         <Link to="/carrito">
-          <span>
-            <img src={imgCart} alt=""/>
-          </span>
+          { !isCart && (
+            <button className="img-cart">
+              <img src={imgCart} alt=""/>
+            </button>
+          )}
         </Link>
+        <ProductCard item={this.state.products}/>
         <Footer />
       </div>
     )
